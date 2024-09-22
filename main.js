@@ -18,9 +18,7 @@ app.use(async ctx => {
         return;   
     }
     //Otherwise, provide weather info of all area.
-    const weatherList = {
-
-    };
+    const weatherList = {};
     for(let i = 0; i < Object.keys(Data).length; i++){
         const area = Object.keys(Data)[i];
         const weatherInfo = getWeather(currentTime, area);
